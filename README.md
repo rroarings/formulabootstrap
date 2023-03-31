@@ -13,3 +13,6 @@ Formula Bootstrap is a a Bootstrap built website that explores some areas of For
 <li>Teams.html navbar does not show after scroll</li>
 <li>index.html javascript error when clicking Constructors tab</li>
 </ul>
+
+
+<img src="oD5LMSJPEi.png">
