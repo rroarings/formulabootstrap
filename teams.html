@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
+    <meta name="author" content="Nick Calvo" />
+    <title>Formula Bootstrap</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/carousel.css">
+
+    <style>
+      .driver {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .driver:last-child {
+        border-bottom: none;
+      }
+      .driver img {
+        margin-right: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+      .driver .name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .driver .points {
+        margin-left: auto;
+        font-weight: bold;
+      }
+    </style>
+</head>
+
+  <body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+      <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">Economy</a></li>
+              <li class="nav-item"><a class="nav-link" href="racecalendar.html">Calendar</a></li>
+              <li class="nav-item"><a class="nav-link" href="future.html">Future</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+    <div class="w-100">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="embed-responsive-item w-100" autoplay loop muted>
+              <source src="assets/img/raceseq.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Red Rockets</h5>
+              <p>Ferrari present themselves as strong competitors in the 2022 season.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item w-100" autoplay loop muted>
+                <source src="assets/img/raceseq.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <video class="embed-responsive-item w-100" autoplay loop muted>
+              <source src="assets/img/raceseq.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    
+      <div class="p-5 text-center" style="background-color:antiquewhite;">
+        <div class="container py-5">
+          <h1 class="text-body-emphasis">Full-width jumbotron</h1>
+          <p class="col-lg-8 mx-auto lead">
+            This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
+          </p>
+        </div>
+      </div>
+    
+    
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/img/astonhelmet.png" alt="helmet" width="140" height="140">
+          <h2 class="fw-normal">Aston Martin</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="assets/img/helmet.png" alt="helmet" width="140" height="140">
+          <h2 class="fw-normal">Red Bull Racing</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="assets/img/merchelmet.png" alt="helmet" width="140" height="140">
+          <h2 class="fw-normal">Mercedes</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+         
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+  
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <!-- /END THE FEATURETTES -->
+  
+      
+
+      <!-- Team cards start -->
+      <div class="container">
+        <div class="text-center text-uppercase text-black" style="margin-bottom: 100px; font-weight: bold; font-family: 'Ubuntu'; font-size: 72px;">
+          <p>Meet your top contenders</p>
+        </div>
+        
+          <div class="alpharow row row-cols-3 g-4">
+            <div class="col mt-5"> 
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/aston-martin.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                  <span class="position-absolute top-0 start-0 translate-middle badge bg-success">2nd Place</span>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">2</h2>
+                  <h5 class="card-title" style="font-weight:900">Aston Martin <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/aston-martin-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 38</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Fernando Alonso</li>
+                  <li class="list-group-item">Lance Stroll</li>
+                </ul>
+               
+              </div>
+            </div>
+            <div class="col"> 
+              <div class="card cardredbull">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/red-bull-racing.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                  <span class="position-absolute top-0 start-0 translate-middle badge bg-danger">1st Place</span>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">1</h2>
+                  <h5 class="card-title">Red Bull Racing <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/red-bull-racing-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 87</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Max Verstappen</li>
+                  <li class="list-group-item">Sergio Perez</li>
+                </ul>
+              
+              </div>
+            </div>
+            <div class="col mt-5"> 
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/mercedes.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                  <span class="position-absolute top-0 start-0 translate-middle badge bg-info">3rd Place</span>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">3</h2>
+                  <h5 class="card-title" style="font-weight:900">Mercedes <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/mercedes-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 38</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Lewis Hamilton</li>
+                  <li class="list-group-item">George Russell</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+          <div class="row row-cols-3 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/ferrari.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                 
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">4</h2>
+                  <h5 class="card-title" style="font-weight:900">Ferrari <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/ferrari-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 26</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Charles Leclerc</li>
+                  <li class="list-group-item">Carlos Sainz</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alpine.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                  
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">5</h2>
+                  <h5 class="card-title" style="font-weight:900">Alpine <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/alpine-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 8</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Pierre Gasly</li>
+                  <li class="list-group-item">Esteban Ocon</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alfa-romeo.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                  
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">6</h2>
+                  <h5 class="card-title" style="font-weight:900">Alfa Romeo <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/alfa-romeo-logo.png.transform/2col/image.png"></h5>
+                  <p class="card-text">Team Points: 4</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Valtteri Bottas</li>
+                  <li class="list-group-item">Zhou Guanyu</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-3 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/haas-f1-team.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                  
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">7</h2>
+                  <h5 class="card-title" style="font-weight:900">Haas <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/haas-f1-team-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 1</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Kevin Magnussen</li>
+                  <li class="list-group-item">Nico Hulkenberg</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/williams.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">8</h2>
+                  <h5 class="card-title" style="font-weight:900">Williams <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/williams-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 1</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Alexander Albon</li>
+                  <li class="list-group-item">Logan Sargeant</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alphatauri.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+            
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">9</h2>
+                  <h5 class="card-title" style="font-weight:900">AlphaTauri <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/alphatauri-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 0</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Yuki Tsunoda</li>
+                  <li class="list-group-item">Nyck De Vries</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-3 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="position-relative">
+                  <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/mclaren.png.transform/6col/image.png" class="card-img-top" alt="Team Image">
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">10</h2>
+                  <h5 class="card-title" style="font-weight:900">McLaren <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/mclaren-logo.png.transform/2col/image.png" alt="Red Bull Racing Logo"></h5>
+                  <p class="card-text">Team Points: 0</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Lando Norris</li>
+                  <li class="list-group-item">Oscar Piastri</li>
+                </ul>
+              </div>
+            </div>
+          <!-- Repeat the above card structure for each team -->
+        </div>
+          </div>
+      </div>
+<!-- Team cards end  -->
+
+<div class="my-5">
+  <div class="p-5 text-center bg-body-tertiary">
+    <div class="container py-5">
+      <h1 class="text-body-emphasis">Full-width jumbotron</h1>
+      <p class="col-lg-8 mx-auto lead">
+        This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
+      </p>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>

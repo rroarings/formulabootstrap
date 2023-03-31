@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,700&display=swap');
+
 :root {
 --bs-blue: #0d6efd; 
 --bs-indigo: #6610f2;
@@ -11,6 +13,8 @@
 --bs-cyan: #0dcaf0;
 --bs-white: #fff;
 --bs-gray: #6c757d;
+--bs-ghost: #bcbfc1;
+--bs-shadow: #e1e1e1;
 }
 
 .btn-primary {
@@ -20,19 +24,19 @@
   }
   .btn-primary:hover {
     color: #fff;
-    background-color: #d9aa00;
-    border-color: #cca000;
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
   }
   .btn-check:focus + .btn-primary, .btn-primary:focus {
     color: #fff;
-    background-color: #d9aa00;
-    border-color: #cca000;
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange)0;
     box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
   }
   .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #cca000;
-    border-color: #bf9600;
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
   }
   .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
@@ -42,3 +46,213 @@
     background-color: #ffc800;
     border-color: #ffc800;
   }
+
+
+.card {
+    margin: 5%;
+    border-radius: 2%;
+    
+}
+
+.card-title {
+  letter-spacing: .1px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 32px;
+}
+
+.card-text {
+  font-weight: 600;
+}
+
+.card-title img {
+  width: 15%;
+}
+
+.cardredbull {
+    border: none;
+    margin-top: -40px;
+    margin-right: 40px;
+
+}
+
+.cardredbull:hover  {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.cardredbull.card {
+  color: white;
+  border: 1px solid #ff0000;
+}
+
+.card .card-title {
+  color: #000000;
+}
+
+.cardredbull.card .card-text {
+  color: #000000;
+}
+
+.cardredbull.card .list-group-item {
+  color: #000000;
+}
+
+.cardredbull:hover .card-title,
+.cardredbull:hover .card-text,
+.cardredbull:hover .list-group-item {
+ 
+}
+
+.cardredbull:hover small {
+  color: var(--bs-red);
+}
+
+.card-footer-redbull small {
+  color: #000;
+}
+
+
+@media (min-width: 992px) {
+    .card-columns {
+      column-count: 3;
+    }
+}
+  
+
+.portfolio-item.team-red .portfolio-hover:hover {
+  background-color: rgba(255, 34, 0, 0.7);
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+.portfolio-item.team-blue .portfolio-hover:hover {
+  background-color: rgba(0, 26, 255, 0.7);
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#portfolio .portfolio-item.team-green .portfolio-hover:hover {
+  background-color: rgba(8, 139, 1, 0.7);
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background-color: rgba(255, 34, 0, 0.7);
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+
+.portfolio-item {
+  margin-bottom: 20px; /* Add some margin to the bottom of each portfolio item */
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-item {
+    margin-bottom: 10px; /* Adjust the margin for smaller screens */
+  }
+}
+
+.driverNav {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.driverNav a {
+
+  color: #000;
+}
+
+.driverNav a:hover {
+  color: var(--bs-blue);
+  text-decoration: underline;
+}
+
+.card {
+  
+}
+
+.list-group {
+  padding: 0.5rem;
+
+}
+
+.list-group-item {
+  padding: .7rem;
+}
+
+.custom-list {
+  max-width: 1200px; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the list horizontally */
+  margin-top: -3%;
+  
+}
+
+.driverstandings {
+  margin-bottom: -3%;
+}
+
+.driver-position {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bolder;
+  margin-right: 1%;
+  
+}
+
+.driver-name {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+  text-align: left;
+  flex-grow: 1;
+  font-size: medium;
+  margin-left: 1%;
+}
+
+.team-name {
+  font-family: "Montserrat";
+  font-size: 0.8em;
+  margin-right: 65%;
+  text-align: left;
+  letter-spacing: .3px;
+}
+
+.bg-gray {
+  background-color: var(--bs-ghost);
+  color: #000;
+  font-family: "Montserrat";
+}
+
+
+.custom-list .list-group-item:hover {
+  background-color: #EEEEEE;
+ 
+}
+
+.consttitle {
+  text-align: center;
+}
+
+.bd-example {
+    --bd-example-padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-top-left-radius: var(--bs-border-radius);
+    border-top-right-radius: var(--bs-border-radius);
+}
+
+.marketingimg {
+  max-width: 30%;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
