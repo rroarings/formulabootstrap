@@ -226,10 +226,6 @@ header.masthead .masthead-subheading {
  
 }
 
-.card-primary h5 {
-  
-}
-
 .card-primary:hover {
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(239, 1, 1, 0.3);
