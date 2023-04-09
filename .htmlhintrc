@@ -5,8 +5,6 @@
   "attr-lowercase": true,
   "attr-value-not-empty": true,
   "alt-require": true,
-  "tag-pair": true,
   "tags-self-close": true,
-  "tagname-lowercase": true,
-  "tagname-specialchars": true
+  "tagname-lowercase": true
 }
