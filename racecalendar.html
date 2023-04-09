@@ -4,219 +4,1437 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Album example for Bootstrap</title>
+    <meta name="author" content="Nick Calvo">
+    <title>F1: Bootstrapped | Race Calendar</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <!-- Bootstrap core CSS -->
-    <link href="css/styles.css" rel="stylesheet" />
-
-    <!-- Custom styles for this template -->
-    
+     <!-- Favicon-->
+     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+     <!-- Font Awesome icons (free version)-->
+     <script src="https://kit.fontawesome.com/a0229737f2.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+     <!-- Google fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+     <!-- Core theme CSS (includes Bootstrap)-->
+     <!-- Bootstrap 5 CSS -->
+     <link href="css/styles.css" rel="stylesheet">
+     <link href="css/custom.css" rel="stylesheet">
   </head>
 
   <body>
-
-    <header>
-      <div class="bg-dark collapse" id="navbarHeader" style="">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
+    <!-- Navigation-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+          <div class="container">
+              <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..."></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                  <i class="fas fa-bars ms-1"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+                      <li class="nav-item"><a class="nav-link" href="racecalendar.html">Calendar</a></li>
+                      <li class="nav-item"><a class="nav-link" href="technologies.html">Technology</a></li>
+                      <li class="nav-item"><a class="nav-link" href="future.html">Predictions</a></li>
+                  </ul>
+              </div>
           </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>Album</strong>
-          </a>
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
+      </nav>
+    </div>
+    <!-- End - Navigation-->
 
-    <main role="main">
+  
+      <!-- Hero -->
+    <div class="container-fluid">
+      <header class="masthead">
+          <div class="container">
+              <div class="masthead-subheading">Welcome To F1: Bootstrapped</div>
+              <div class="masthead-heading text-uppercase">Let's Get Racing</div>
+              <a class="btn btn-primary btn-xl text-uppercase" href="#racecaldiv">Explore the Season</a>
+          </div>
+      </header>
+    </div>
+  <!-- End-  Hero -->  
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
-        </div>
-      </section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc0e%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc0e%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+  <div class="container border-bottom">
+    <div class="row justify-content-center">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Features with title</h2>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
+            <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#racecaldiv" class="btn btn-primary btn-lg">Primary button</a>
+          </div>
+    
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#collection"></use>
+                  </svg>
                 </div>
+                <h4 class="fw-semibold mb-0">Featured title</h4>
+                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc0f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc0f%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#gear-fill"></use>
+                  </svg>
                 </div>
+                <h4 class="fw-semibold mb-0">Featured title</h4>
+                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc0f%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc0f%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#speedometer"></use>
+                  </svg>
                 </div>
+                <h4 class="fw-semibold mb-0">Featured title</h4>
+                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
               </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc10%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc10%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#table"></use>
+                  </svg>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc10%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc10%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc10%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc10%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc11%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc11%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc11%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc11%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1873370cc11%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1873370cc11%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.73075485229492%22%20y%3D%22120.14713325500489%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+                <h4 class="fw-semibold mb-0">Featured title</h4>
+                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- /.row -->
+    </div>
+  </div>
 
-    </main>
-
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-          <a href="#">Back to top</a>
-        </p>
-        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+  <div class="container-fluid bg-shaded">
+    <div class="container">
+      <div class="row featurette mx-auto p-5 align-items-center">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Race one. <span class="text-secondary">Lando and Oscar take on the 2023 season.</span></h2>
+          <p class="lead">Join us on a journey through the high-speed world of Formula One as we explore the talents of Lando Norris and Oscar Piastri, the two drivers of the McLaren team. Despite a slow start with zero points, their grit, determination, and remarkable skills behind the wheel are sure to make this season one to remember.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="assets/img/teams/ai/future-aiengineer2.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" role="img">
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Featurette 2 -->
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row featurette mx-auto p-5 align-items-center">
+        <div class="col-md-5">
+          <img src="assets/img/teams/ai/mercdes-ai.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" role="img">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Race two. <span class="text-secondary">Lando and Oscar take on the 2023 season.</span></h2>
+          <p class="lead">Join us on a journey through the high-speed world of Formula One as we explore the talents of Lando Norris and Oscar Piastri, the two drivers of the McLaren team. Despite a slow start with zero points, their grit, determination, and remarkable skills behind the wheel are sure to make this season one to remember.</p>
+        </div>
+      </div><!-- End - Featurette 2 -->
+    </div>"
+  </div>
+  
+  <div class="container-fluid bg-dark shadow">
+    <div class="container p-5 text-center text-white">
+      <div class="text-center text-uppercase fw-bold" style="font-family: 'Montserrat';font-size: 48px;" id="racecaldiv">
+        The Complete Race Collection
+      </div>
+      <p class="text-uppercase fs-4 mx-auto my-auto" style="font-family: 'Montserrat';letter-spacing: .09rem;">23 races at your fingertips</p>
+    </div>
+  </div>
+
+
+  <!-- Race start -->
+  <div class="container-fluid">
+    <div class="container mb-5 shadow">
+      <!-- Album start -->
+      <div class="album py-5 bg-light race-album">
+          <div class="row">
+            <!-- Album Item 1 -->
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title cal-title">Bahrain</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Bahrain Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Charles Leclerc <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1.37.33.584</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >26 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Carlos Sainz <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:37:39.182</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:37:43.259.</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            
+             <!-- End - Album Item 1 -->
+             <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Saudia Arabia</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#saudiArabiaModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Saudi Arabia Modal -->
+              <div class="modal fade" id="saudiArabiaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Saudi Arabian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Max Verstappen takes first in Saudi Arabia</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:24:19.293</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill">25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +0.549</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill">19 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Carlos Sainz <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +8.097</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Australia</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#australiaRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="australiaRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Australian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Charles Leclerc <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:27:46.548</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >26 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1">Red Bull Racing</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +20.524</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">George Russel <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +25.593</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Italy</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#imolaRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="imolaRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Italian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1.32.07.986</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >26 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1">Red Bull Racing</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +16.527</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lando Norris <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">McLaren</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +34.834</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Miami</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#miamiRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="miamiRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Miami Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:34:24.258</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >26 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +3.786</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Carlos Sainz <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +8.229</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Spain</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#spainRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="spainRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Spainish Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:37:20.475</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +13.072</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">19 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">George Russell <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +32.927/p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Monaco</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#monacoRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="monacoRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Monaco Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Sergio Perez <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:56:30.265</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Carlos Sainz <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +1.154</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +1.491</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title cal-title">Azerbaijan</p>
+                  <p class="card-subtitle">Aaaaaaaaaaaaaaaaa</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#azarbaijanRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="azarbaijanRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Azerbaijan Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:34:05.941</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1">Red Bull Racing</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +20.823</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">19 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">George Russell <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +45.995</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Canada</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#canadaRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="canadaRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Canadian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:36:21.757</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Carlos Sainz <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +0.993</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">19 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +7.006</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Great Britain</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#britishRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="britishRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">British Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Carlos Sainz <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 2:17:50.311</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +3.779</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +6.225</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">16 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Austria</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#austiraRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="austiraRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Austrian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Charles Leclerc <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:24:24:312</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Max Verstappen <span class="fw-normal m-lg-1">Red Bull Racing</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +1.532</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">19 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +41.217</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">France</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#frenchRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="frenchRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">French Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:30:02.112</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1">Mercedes</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +10.587</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">George Russell <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +16.495</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Hungary</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hungaryRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="hungaryRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Hungarian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:39:35.912</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1">Mercedes</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +7.834</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">19 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">George Russell <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +12.337</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Belgium</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#belgiumRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="belgiumRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Belgian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:25:52.894</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >26 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1">Red Bull Racing</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +17.841</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +26.886</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Netherlands</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#dutchRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="dutchRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Dutch Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:36:42.773</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >26 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">George Russell <span class="fw-normal m-lg-1">Mercedes</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +4.071</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +10.929</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Italy</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#italyRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="italyRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Italian Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:20:27.511</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +2.446</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">George Russell <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +3.405</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Singapore</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#yasMarinaRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="yasMarinaRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Singapore Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Sergio Perez <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 2:02:20.328</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +2.595</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Carlos Sainz <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +10.305</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Japan</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#japanRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="japanRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Japanese Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 3:01:44.004</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1">Red Bull Racing</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +27.066</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +31.763</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">United States</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#usaRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="usaRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">United States Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:42:11.687</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1">Mercedes</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +5.023</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +7.501</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Mexico</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#mexicoRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="mexicoRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Mexico City Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:38:36.729</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1">Mercedes</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +15.186</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +18.097</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Brazil</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#brazilRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="brazilRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Sao Paulo Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Charles Leclerc opens up the season in a first place win</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">George Russell <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Mercedes</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:38:34.044</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >26 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Lewis Hamilton <span class="fw-normal m-lg-1">Mercedes</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +1.529</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Carlos Sainz <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Ferrari</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +4.051</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow calendar-card">
+                <img class="card-img-top" src="assets/img/teams/redbull/redbull1.png">
+                <div class="card-body">
+                  <p class="card-title">Abu Dhabi</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#abuDhabiRaceModal">View Results</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="abuDhabiRaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content modal-content-teamscal">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-2" style="margin-bottom: -6%;">Abu Dhabi Grand Prix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Verstappen solidifies his championship in Abu Dhabi</p>
+                      <hr>
+                      <h6 class="card-subtitle">Race Results</h6>
+                      <ul class="list-group list-group-flush list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold fs-4">Max Verstappen <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div> 
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> 1:27:45.914</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="26 PTS Total" >25 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Charles Leclerc <span class="fw-normal m-lg-1">Ferrari</span></div>
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +8.771</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="18 PTS Total">18 PTS</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sergio Perez <span class="fw-normal m-lg-1" style="font-size: 0.9rem;">Red Bull Racing</span></div>
+                            
+                            <p style="margin-bottom: -1%;"><i class="bi bi-stopwatch"></i> +10.093</p>
+                          </div>
+                          <span class="badge bg-gray rounded-pill" data-bs-toggle="tooltip" title="15 PTS Total">15 PTS</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+   </div>   
+  <!-- Races end -->
+
+  <div class="container-fluid bg-shaded">
+    <div class="container p-5 text-center">
+      <h2>H2 Title Text</h2>
+      <div class="row">
+        <div class="col-sm-8 bg-black">col-sm-8</div>
+        <div class="col-sm-4 bg-danger">col-sm-4</div>
+      </div>
+      <div class="row">
+        <div class="col-sm bg-info">col-sm</div>
+        <div class="col-sm bg-success">col-sm</div>
+        <div class="col-sm bg-warning">col-sm</div>
+      </div>
+    </div>
+  </div>
+
+
+    <footer class="footer py-4">
+        <div class="container">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#page-top" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="teams.html" class="nav-link px-2 text-body-secondary">Teams</a></li>
+                <li class="nav-item"><a href="racecalendar.html" class="nav-link px-2 text-body-secondary">Calendar</a></li>
+                <li class="nav-item"><a href="economy.html" class="nav-link px-2 text-body-secondary">Economy</a></li>
+                <li class="nav-item"><a href="#page-top" class="nav-link px-2 text-body-secondary">Future</a></li>
+            </ul>
+            <p class="text-center text-body-secondary"><i class="bi bi-c-circle"></i> 2023 F1: Bootstrapped | Nick Calvo</p>
+        </div>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -224,6 +1442,16 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- Bootstrap core JS-->
     <!-- Core theme JS-->
+     <!-- Bootstrap core JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Core theme JS-->
+     <script src="js/scripts.js"></script>
+     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+     <!-- * *                               SB Forms JS                               * *-->
+     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="js/scripts.js"></script>
