@@ -19,7 +19,7 @@ body {
 .carousel-caption {
   font-size: 28px;
   color: #fff;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
   text-align: left;
 }

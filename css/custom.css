@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
 --bs-blue: #0d6efd; 
@@ -17,76 +18,262 @@
 --bs-shadow: #e1e1e1;
 }
 
+.badge-mute {
+  background-color: var(--bs-gray);
+  font-size: .8rem;
+  letter-spacing: 0.08rem;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .btn-primary {
     color: #ffffff;
-    background-color: var(--bs-red);
-    border-color: #ffffff;
-  }
+    background: rgb(229,57,53);
+    background: linear-gradient(180deg, rgba(229,57,53,1) 0%, rgba(183,28,28,1) 100%);
+    border-color: var(--bs-red);
+}
+
   .btn-primary:hover {
     color: #fff;
-    background-color: var(--bs-orange);
+    background: linear-gradient(180deg, rgb(229, 144, 53) 0%, rgb(232, 131, 7) 100%);
     border-color: var(--bs-orange);
-  }
-  .btn-check:focus + .btn-primary, .btn-primary:focus {
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
     color: #fff;
     background-color: var(--bs-orange);
     border-color: var(--bs-orange)0;
     box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
-  }
-  .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+}
+
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
     color: #fff;
     background-color: var(--bs-orange);
     border-color: var(--bs-orange);
-  }
-  .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+}
+
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
-  }
-  .btn-primary:disabled, .btn-primary.disabled {
+}
+
+.btn-primary:disabled, .btn-primary.disabled {
     color: #fff;
     background-color: #ffc800;
     border-color: #ffc800;
-  }
+}
+
+header.masthead {
+  position: relative;
+  background-image: url(../assets/img/racei2.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.masthead-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* change the opacity to your desired level */
+}
+
+header.masthead .masthead-subheading {
+  font-family: 'Inter', sans-serif;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-button:hover {
+  color: var(--bs-blue)
+  
+}
+
+.nav-pills .nav-link {
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  
+}
+
+.nav-pills .nav-link:hover {
+  
+  border: 1px solid #0d6efd;
+}
 
 
+.background-helper {
+  background-image: url('../assets/img/dcNavbarBanner.png');
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .1rem;
+
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--bs-blue);
+  font-style: italic;
+}
+
+.dropdown-menu  {
+  background: transparent;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  
+  vertical-align: middle;
+}
+
+.fa-inverse {
+  color: white;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-stack-1x {
+  font-size: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.tab-pane {
+  display: none;
+}
+
+/* Calendar album */
+
+.albumhero {
+  background-image: url(../assets/img/racei2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Portfolio Modal */
+.brand-logo img {
+  max-width: 30%;
+  justify-content: left;
+}
+
+.quicklinks a {
+  text-decoration: none;
+  color: var(--bs-red);
+  align-items: left;
+}
+
+/* Portfolio Modal Cards*/
 .card {
-    margin: 5%;
-    border-radius: 2%;
-    
+  margin: 5%;
+  ;
+}
+
+.card-primary { 
+  z-index: 1;
+ 
+}
+
+.card-primary h5 {
+  
+}
+
+.card-primary:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(239, 1, 1, 0.3);
 }
 
 .card-title {
-  letter-spacing: .1px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
   font-size: 32px;
+  text-align: left;
 }
 
 .card-text {
+  font-family: 'Monsterrat', sans-serif;
+  font-size: small;
+  text-align: left;
+}
+
+.driverNameCard {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .card-title img {
-  width: 15%;
-}
-
-.cardredbull {
-    border: none;
-    margin-top: -40px;
-    margin-right: 40px;
-
-}
-
-.cardredbull:hover  {
-    transform: scale(1.08);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.cardredbull.card {
-  color: white;
-  border: 1px solid #ff0000;
+  max-width: 36px;
 }
 
 .card .card-title {
   color: #000000;
+}
+
+.stats {
+  max-width: 800px;
+  align-items: left;
+}
+
+.teams-info-links {
+  color: var(--bs-red);
+  text-decoration: none;
+}
+
+.teams-info-links:hover {
+  color: var(--bs-blue)
+}
+
+.driver-quick-img:hover {
+  transform: scale(1.3);
+}
+
+.table {
+  margin-top: 30px;
+  max-width: 30px;
+}
+
+.team-portfolio-modal-info {
+  font-family: 'Monsterrat', sans-serif;
+}
+
+/* Start - Teams page Red Bull Racing Card */ 
+
+.cardredbull {
+  border: none;
+  margin-top: -20px;
+}
+
+.cardredbull:hover  {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.cardredbull.card {
+color: white;
+border: 1px solid #ff0000;
 }
 
 .cardredbull.card .card-text {
@@ -111,34 +298,28 @@
   color: #000;
 }
 
+/* End - Teams page Red Bull Racing Card */ 
 
+/* Start - Media @ 992px */ 
 @media (min-width: 992px) {
     .card-columns {
       column-count: 3;
     }
-}
-  
 
-.portfolio-item.team-red .portfolio-hover:hover {
-  background-color: rgba(255, 34, 0, 0.7);
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
+    .fa-stack {
+      font-size: 3rem;
+    }
 }
+ 
+/* End - Media @ 992px */ 
 
-.portfolio-item.team-blue .portfolio-hover:hover {
-  background-color: rgba(0, 26, 255, 0.7);
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
-}
-
-#portfolio .portfolio-item.team-green .portfolio-hover:hover {
-  background-color: rgba(8, 139, 1, 0.7);
-  opacity: 0;
-  transition: opacity ease-in-out 0.25s;
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background-color: rgba(255, 34, 0, 0.7);
+  background-color: rgba(45, 45, 45, 0.7);
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
@@ -151,88 +332,96 @@
   margin-bottom: 20px; /* Add some margin to the bottom of each portfolio item */
 }
 
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out; /* add transitions for both transform and scale properties */
+}
+
+.portfolio-caption-subheading .portfolio-caption-custom:hover {
+  transform: scale(1.08);
+}
+
+
 @media only screen and (max-width: 768px) {
   .portfolio-item {
     margin-bottom: 10px; /* Adjust the margin for smaller screens */
   }
-}
 
-.driverNav {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 48px;
-  display: flex;
-  justify-content: center;
-
-}
-
-.driverNav a {
-
-  color: #000;
-}
-
-.driverNav a:hover {
-  color: var(--bs-blue);
-  text-decoration: underline;
-}
-
-.card {
-  
+  .fa-stack {
+    font-size: 2rem;
+      
+    }
 }
 
 .list-group {
-  padding: 0.5rem;
-
+  padding: 1rem;
 }
 
 .list-group-item {
-  padding: .7rem;
+  padding: 1rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 
+/* Driver Standings custom List*/
 .custom-list {
   max-width: 1200px; /* Adjust this value as needed */
   margin: 0 auto; /* Center the list horizontally */
-  margin-top: -3%;
   
 }
 
-.driverstandings {
-  margin-bottom: -3%;
+.driverstandings h2 {
+  margin-top: 2%;
+  text-transform: uppercase;
+  font-size: 64px;
 }
 
 .driver-position {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   margin-right: 1%;
   
 }
 
 .driver-name {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-align: left;
   flex-grow: 1;
   font-size: medium;
   margin-left: 1%;
+  white-space: nowrap;
 }
 
+.driverQuickStats {
+  color: #fff;
+}
+
+/* Team names on Driver cards */
 .team-name {
   font-family: "Montserrat";
   font-size: 0.8em;
-  margin-right: 65%;
-  text-align: left;
+  font-weight: 400;
+  margin-left: 0.8rem;
+  margin-right: 30%;
   letter-spacing: .3px;
+  white-space: nowrap;
 }
-
-.bg-gray {
-  background-color: var(--bs-ghost);
-  color: #000;
-  font-family: "Montserrat";
-}
-
 
 .custom-list .list-group-item:hover {
-  background-color: #EEEEEE;
- 
+  background-color: #343a40; /* a dark shade of gray */
+  color: #FFFFFF; /* change text color to white for contrast */
+  transform: scale(1.10);
+  z-index: 1;
+}
+
+.list-group-item:hover .team-name {
+  color: #ffffff; /* set the color to white */
+  font-weight: 400;
 }
 
 .consttitle {
@@ -240,12 +429,12 @@
 }
 
 .bd-example {
-    --bd-example-padding: 1.5rem;
-    margin-right: 0;
-    margin-left: 0;
-    border-width: 1px;
-    border-top-left-radius: var(--bs-border-radius);
-    border-top-right-radius: var(--bs-border-radius);
+  --bd-example-padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 1px;
+  border-top-left-radius: var(--bs-border-radius);
+  border-top-right-radius: var(--bs-border-radius);
 }
 
 .marketingimg {
@@ -256,3 +445,104 @@
   box-sizing: border-box;
 }
 
+.constructorsUList a {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Ubuntu',sans-serif;
+  color: var(--bs-blue);
+}
+
+/* About Timeline */
+.aboutLinks {
+  text-decoration: none;
+  color: #000;
+}
+
+.aboutLinks:hover {
+  text-decoration: none;
+  color: var(--bs-blue);
+}
+
+.timeline-body {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+}
+
+.section-subheading {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+}
+
+.team-member p {
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+}
+
+.footer .nav-link {
+  font-weight: bold;
+  color: #000;
+}
+
+.footer .nav-link:hover {
+  color: var(--bs-blue);
+  font-style: italic;
+}
+
+.modal-content-teamscal {
+  font-family: 'Inter', sans-serif;
+}
+
+.list-group-item:hover {
+  transform: scale(1.02);
+  background-color: var(--bs-shadow);
+}
+
+.modal-content-teamscal p {
+  
+}
+
+.modal-content-teamscal ul {
+  
+}
+
+.album {
+  background-color: #bebebe;
+}
+
+.calendar-card {
+  border: 8px solid black;
+  border-radius: .25rem;
+  border-left: none;
+  border-bottom: none;
+  padding: 3%;
+  position: relative;
+}
+
+.calendar-card:hover {
+  transform: scale(1.03);
+}
+
+.cal-title {
+  margin-bottom: -1%;
+  font-weight: bold;
+}
+
+.profile-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.img-grid-regular {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.img-grid1 {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: -20px;
+}
