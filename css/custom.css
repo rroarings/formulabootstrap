@@ -18,6 +18,10 @@
 --bs-shadow: #e1e1e1;
 }
 
+p {
+  font-family: 'Inter', sans-serif;
+}
+
 .badge-mute {
   background-color: var(--bs-gray);
   font-size: .8rem;
