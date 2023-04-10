@@ -599,3 +599,40 @@ border: 1px solid #ff0000;
   max-width: 100%;
   background-repeat: no-repeat;
 }
+
+.btn-calender {
+  font-family: 'Ubuntu', 'Inter', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  background-color: #000;
+  color: white;
+}
+
+.btn-calender:hover {
+  background-color: var(--bs-red);
+  
+}
+
+.btn-calender-card {
+  font-family: 'Ubuntu', 'Inter', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  background-color: #000;
+  color: white;
+}
+
+.btn-calender-card:hover {
+  color: red;
+}
+
+.btn-calender-dark {
+  font-family: 'Ubuntu', 'Inter', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn-calender-light {
+  font-family: 'Ubuntu', 'Inter', sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
