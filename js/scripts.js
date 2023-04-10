@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -50,5 +49,26 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+});
 
+window.addEventListener('DOMContentLoaded', function() {
+    // select the button element
+  const exploreBtn = document.querySelector('a[href="#section-engineer"]');
+  
+  // add event listener to the button
+  exploreBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // prevent the default scroll behavior
+    
+    const section = document.querySelector('#section-engineer'); // select the target section
+    const offset = 200; // adjust the offset value as needed
+    
+    const sectionPosition = section.getBoundingClientRect().top; // get the section's top position
+    const bodyPosition = document.body.getBoundingClientRect().top; // get the body's top position
+    const scrollPosition = sectionPosition - bodyPosition - offset; // calculate the scroll position
+    
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth' // add smooth scrolling effect
+    });
+  });
 });
