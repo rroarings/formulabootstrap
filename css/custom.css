@@ -579,3 +579,10 @@ border: 1px solid #ff0000;
   height: auto;
   margin-top: -20px;
 }
+
+.container-backgroundimg {
+  background-image: url('../assets/img/teams/ferrari/ferraricar1.png');
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
