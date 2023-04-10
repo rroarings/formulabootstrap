@@ -542,6 +542,19 @@ border: 1px solid #ff0000;
   background-color: #bebebe;
 }
 
+.article-border {
+  border: 12px solid black;
+  border-radius: .25rem;
+  border-left: none;
+  border-bottom: none;
+  padding: 3%;
+  position: relative;
+}
+
+.article-border:hover {
+  transform: scale(1.01);
+}
+
 .calendar-card {
   border: 8px solid black;
   border-radius: .25rem;
