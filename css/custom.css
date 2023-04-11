@@ -600,6 +600,15 @@ border: 1px solid #ff0000;
   background-repeat: no-repeat;
 }
 
+.calender-hero {
+  position: relative;
+  background-image: url('../assets/img/teams/redbull/untitled.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: -0.1rem;
+}
+
 .btn-calender {
   font-family: 'Ubuntu', 'Inter', sans-serif;
   font-size: medium;
