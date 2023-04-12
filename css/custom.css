@@ -18,6 +18,10 @@
 --bs-shadow: #e1e1e1;
 }
 
+.tt {
+  
+}
+
 .text-bg-dark {
   color: #fff!important;
   background-color: RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
@@ -122,9 +126,9 @@ header.masthead .masthead-subheading {
   height: 100%;
 }
 
+
 .nav-button:hover {
   color: var(--bs-blue)
-  
 }
 
 .nav-pills .nav-link {
@@ -132,14 +136,11 @@ header.masthead .masthead-subheading {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   color: #000;
-  
 }
 
-.nav-pills .nav-link:hover {
-  
-  border: 1px solid #0d6efd;
+.nav-pills .nav-link.active {
+background-color: var(--bs-blue);
 }
-
 
 .background-helper {
   background-image: url('../assets/img/dcNavbarBanner.png');
@@ -217,18 +218,26 @@ header.masthead .masthead-subheading {
 
 /* Portfolio Modal Cards*/
 .card {
-  margin: 5%;
-  ;
+  margin: 3%;
 }
 
 .card-primary { 
   z-index: 1;
- 
+  margin: 3%;
 }
 
 .card-primary:hover {
   transform: scale(1.08);
   box-shadow: 0 0 20px rgba(239, 1, 1, 0.3);
+}
+
+.card-secondary {
+  z-index: 1;
+}
+
+.card-secondary:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
@@ -334,6 +343,10 @@ border: 1px solid #ff0000;
     .fa-stack {
       font-size: 3rem;
     }
+
+    .driverstandings {
+      color: #000;
+    }
 }
  
 /* End - Media @ 992px */ 
@@ -400,9 +413,10 @@ border: 1px solid #ff0000;
 }
 
 .driverstandings h2 {
-  margin-top: 2%;
+  margin-top: 5%;
   text-transform: uppercase;
   font-size: 64px;
+  width: clamp(100%, 100%, 100%);
 }
 
 .driver-position {
@@ -493,17 +507,12 @@ border: 1px solid #ff0000;
   font-weight: normal;
 }
 
-.section-heading {
-  font-family: 'Ubuntu', sans-serif;
-  text-transform: uppercase;
-  font-size: 60px;
-  
-}
-
-.section-subheading {
+.page-section h3.section-subheading {
   font-family: 'Inter', sans-serif;
-  font-weight: normal;
-  font-size: 1.3rem
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  
 }
 
 .team-member p {
