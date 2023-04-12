@@ -415,7 +415,7 @@ border: 1px solid #ff0000;
 .driverstandings h2 {
   margin-top: 5%;
   text-transform: uppercase;
-  font-size: 64px;
+  
   width: clamp(100%, 100%, 100%);
 }
 
@@ -640,7 +640,8 @@ border: 1px solid #ff0000;
 }
 
 .btn-calender-card:hover {
-  color: red;
+ background-color: red;
+  color: white;
 }
 
 .btn-calender-dark {
