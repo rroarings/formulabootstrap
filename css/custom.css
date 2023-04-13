@@ -203,7 +203,6 @@ background-color: var(--bs-blue);
   background-repeat: no-repeat;
 }
 
-
 /* Portfolio Modal */
 .brand-logo img {
   max-width: 30%;
@@ -566,19 +565,19 @@ border: 1px solid #ff0000;
 
 .calendar-card {
   border: 8px solid black;
-  border-radius: .25rem;
+  border-radius: 2.65%;
   border-left: none;
   border-bottom: none;
-  padding: 3%;
+  border-top-left-radius: 0%;
+  padding: 5%;
   position: relative;
 }
 
 .calendar-card:hover {
-  transform: scale(1.03);
+  border-color: red;
 }
 
 .cal-title {
-  margin-bottom: -1%;
   font-weight: bold;
 }
 
