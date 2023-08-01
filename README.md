@@ -16,7 +16,7 @@ Formula Bootstrap is a a Bootstrap built website that explores some areas of For
 
 ### Issues
 <ul>
-<li>None at the moment</li>
+<li>Incosistent branding and styles</li>
 </ul>
 
 ## Previews
